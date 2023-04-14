@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CircleAvatar(
               radius: 50,
@@ -37,46 +38,42 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              padding: const EdgeInsets.all(10),
-              color: Colors.white,
-              child: Row(
-                children: [
-                  const Icon(
-                    Icons.phone,
-                    color: Colors.teal,
-                  ),
-                  const SizedBox(width: 20),
-                  Text(
-                    '+55 51 123.456.789',
-                    style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        color: Colors.teal.shade900,
-                        fontSize: 20),
-                  ),
-                ],
+            SizedBox(
+              width: 150,
+              child: Divider(
+                color: Colors.teal.shade100,
               ),
             ),
-            Container(
+            Card(
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              padding: const EdgeInsets.all(10),
-              color: Colors.white,
-              child: Row(
-                children: [
-                  const Icon(
-                    Icons.email_outlined,
-                    color: Colors.teal,
-                  ),
-                  const SizedBox(width: 20),
-                  Text(
-                    'homer.simpson@nuclear.com',
-                    style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        color: Colors.teal.shade900,
-                        fontSize: 20),
-                  ),
-                ],
+              child: ListTile(
+                leading: const Icon(
+                  Icons.phone,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  '+55 51 123.456.789',
+                  style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      color: Colors.teal.shade900,
+                      fontSize: 20),
+                ),
+              ),
+            ),
+            Card(
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: ListTile(
+                leading: const Icon(
+                  Icons.email_outlined,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  'homer.simpson@nuclear.com',
+                  style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      color: Colors.teal.shade900,
+                      fontSize: 20),
+                ),
               ),
             )
           ],

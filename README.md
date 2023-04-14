@@ -14,3 +14,8 @@
 # AULA 3 - 1.0.2
 - Adicionar duas linhas abaixo da profissão, onde uma mostre o telefone de contato e a outra mostre o e-mail;
 - Na esquerda de cada uma dessas linhas, antes do telefone e do e-mail tem que conter uma ícone que se refiram a essas palavras.
+
+# AULA 4 - 1.0.3
+- Trocar os Container por um Card;
+- Alterar as Rows por ums ListTile e colocar as informações corretas lá dentro;
+- Adicionar um separador entre o cargo do usuário e o número de contato. Para isso é só utilizar um Divider dentro de um SizedBox que tenha o tamanho necessário da linha.
